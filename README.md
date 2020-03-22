@@ -1,62 +1,34 @@
-﻿# YunnyEchoBot
+﻿##YunnyAlfredBot
+YunnyAlfredBot is a prototype of a Microsoft Teams bot, Alfred, that streamlines dev ops scenarios from multiple sources such as github, stackoverflow and emails.
+![Image of YunnyAlfredBot](/ReadMeMaterials/YunnyAlfredBot_sample.PNG)
 
-Bot Framework v4 echo bot sample.
+**Note:** You see 'BigYunsEchoBot' as a bot name in the screen shot as I registered the bot to MIcrosoft Teams by using this name. Initially, I simply named it this way as BigYuns is my nickname and I was suing the EchoBot template to create this bot. Unfortunately, I cannot change the bot name once I name it. Don't get confused the bot name with the Teams app name. The app name is 'YunnyAlfredBot', and this is the name you use to @ mention the bot. 
+![Mention YunnyAlfredBot](/ReadMeMaterials/YunnyAlfredBot_mention.PNG)
 
-This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to create a simple bot that accepts input from the user and echoes it back.
+## Why do we need YunnyAlfredBot?
+As I mentioned above, YunnyAlfredBot is a simple prototype of AlfredBot whose premise is to streamline manual work in dev ops handling. To understand the manual work needed in dev ops sceanrios, we need to understand how many software teams are dealing with dev ops work.
 
-## Prerequisites
+Each software team gets customers' bug reports and/or feature requests from various resources. For instance, Microsfot Teams gets many customer feedbacks mainly from github issues, stackoverflow questions and direct emails. As of now, we have a v-team whose main focus is triaging these bug reports or feature requests. In this 'triaging' process, there are two main problems.
 
-- [.NET Core SDK](https://dotnet.microsoft.com/download) version 2.1
+1) No bot that listens to multiple sources.
+- Currently, Teams has a webhook that notifies any issues/questions/emails that are filed to the Microsoft Teams support for each source. Therefore, the v-team needs to manually figure out the webhook for three or more sources.
 
-  ```bash
-  # determine dotnet version
-  dotnet --version
-  ```
+2) No effecient ways to get updates from those external sources to Microsoft Teams Client.
+- For instance, when a customer sends an email to Microsoft Teams support team, an adaptive card that contains the metadata about the email gets sent to a configured channel. But when
 
-## To try this sample
+## How will Alfred Bot address those two problems?
 
-- In a terminal, navigate to `YunnyEchoBot`
+## Takeways:
 
-    ```bash
-    # change into project folder
-    cd # YunnyEchoBot
-    ```
-
-- Run the bot from a terminal or from Visual Studio, choose option A or B.
-
-  A) From a terminal
-
-  ```bash
-  # run the bot
-  dotnet run
-  ```
-
-  B) Or from Visual Studio
-
-  - Launch Visual Studio
-  - File -> Open -> Project/Solution
-  - Navigate to `YunnyEchoBot` folder
-  - Select `YunnyEchoBot.csproj` file
-  - Press `F5` to run the project
-
-## Testing the bot using Bot Framework Emulator
-
-[Bot Framework Emulator](https://github.com/microsoft/botframework-emulator) is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
-
-- Install the Bot Framework Emulator version 4.5.0 or greater from [here](https://github.com/Microsoft/BotFramework-Emulator/releases)
-
-### Connect to the bot using Bot Framework Emulator
-
-- Launch Bot Framework Emulator
-- File -> Open Bot
-- Enter a Bot URL of `http://localhost:3978/api/messages`
-
+# Try YunnyAlfredBot Locally
+## Set up the bot
+## Set up the Azure Cosmos DB
+## Get your Github Personal Access Token
+## Configure the Flows
 ## Deploy the bot to Azure
+- If you would like to deploy your bot service to azure, see [Deploy your bot to Azure](https://aka.ms/azuredeployment) for a complete list of deployment instructions.
 
-To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](https://aka.ms/azuredeployment) for a complete list of deployment instructions.
-
-## Further reading
-
+# References related to Bot Framework, Bot Service and Azure
 - [Bot Framework Documentation](https://docs.botframework.com)
 - [Bot Basics](https://docs.microsoft.com/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0)
 - [Activity processing](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-activity-processing?view=azure-bot-service-4.0)
