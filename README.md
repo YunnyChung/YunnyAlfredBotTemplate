@@ -82,22 +82,22 @@ YunnyAlfredBot exposes an end point(`flow/messages/{encryptedChannelID}`). You n
 * Click 'import' on the top. 
 * Upload "[YunnyAlfredBot]Github-AssignToUser" zip file. 
   * After the zip file is uploaded, you will a page like this: 
-    * ![After uploaded](/ReadMeMaterials/AfterImported.PNG)
+    ![After uploaded](/ReadMeMaterials/AfterImported.PNG)
 * Click a tool icon under 'ACTION' in the same row with 'YunnyAlfredBot GitHub-AssignToAUser Template'. 
   * Change 'Update' under 'Setup' to 'Create as new'. 
-    * ![Create as new](/ReadMeMaterials/createasnew.png)
+    ![Create as new](/ReadMeMaterials/createasnew.PNG)
 *  Click a tool icon under 'ACTION' in the same row with 'unicorn-devwriter'. 
   * Select your github account. If your github account does not exist in the list, click 'create new'. 
-  * ![Change a user account](/ReadMeMaterials/changeuseraccount.png)
+    ![Change a user account](/ReadMeMaterials/changeuseraccount.PNG)
   * Name your flow as 'YunnyAlfredBot GitHub-AssignToAUser From Template'.
 * If you see a grey X for each row, you are all good to go for "[YunnyAlfredBot]Github-AssignToUser" flow.
-  *![Import Set Up is done](/ReadMeMaterials/ImportSetupIsDone.png)
+  ![Import Set Up is done](/ReadMeMaterials/ImportSetupIsDone.PNG)
 
 Repeat the above process for ["[YunnyAlfredBot]GitHub-CloseIssues flow"](/ReadMeMaterials/[YunnyAlfredBot]GitHub-CloseIssues.zip). 
 
 ## Set up your Flows. 
 * Open 'YunnyAlfredBot GitHub-AssignToAUser From Template' flow.
-  * You will see something like this: ![Flow](/ReadMeMaterials/flow.png)
+  * You will see something like this: ![Flow](/ReadMeMaterials/flow.PNG)
 * Go to 'Secrets' box -> Click '...' -> Click 'Settings' -> Add your github personal access token as a value of 'githubAuth' -> Click Done.
 * Click 'Switch' -> Click 'Case' -> Click 'HTTP 2'.
 * In URI section, copy the url that you got by running '@YunnyAlfredBot connect' in Teams client. 
@@ -105,9 +105,9 @@ Repeat the above process for ["[YunnyAlfredBot]GitHub-CloseIssues flow"](/ReadMe
   * Note: Only people in the channel where YunnyAlfredBot is installed can be tagged. 
   * You can check a person's UPN by mentioning the personl in the channel. 
     * ex: dmxtst17@microsoft.com 
-    * ![get upn](/ReadMeMaterials/upn.png)
+    * ![get upn](/ReadMeMaterials/upn.PNG)
   * The end result should look like this:
-    ![end result](/ReadMeMaterials/endresult.png)
+    ![end result](/ReadMeMaterials/endresult.PNG)
 
 Repeat the above process for "[YunnyAlfredBot]GitHub-CloseIssues From Template" flow. 
 
