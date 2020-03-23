@@ -85,7 +85,7 @@ YunnyAlfredBot exposes an end point(`flow/messages/{encryptedChannelID}`). You n
     ![After uploaded](/ReadMeMaterials/AfterImported.PNG)
 * Click a tool icon under 'ACTION' in the same row with 'YunnyAlfredBot GitHub-AssignToAUser Template'. 
   * Change 'Update' under 'Setup' to 'Create as new'.
-    ![Create as new](/ReadMeMaterials/createasnew.PNG)
+  * ![Create as new](/ReadMeMaterials/createasnew.PNG)
 *  Click a tool icon under 'ACTION' in the same row with 'unicorn-devwriter'. 
   * Select your github account. If your github account does not exist in the list, click 'create new'. 
     ![Change a user account](/ReadMeMaterials/changeuseraccount.PNG)
