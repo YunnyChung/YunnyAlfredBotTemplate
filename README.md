@@ -1,4 +1,4 @@
-﻿##YunnyAlfredBot
+﻿## YunnyAlfredBot
 YunnyAlfredBot is a prototype of a Microsoft Teams bot, Alfred, that streamlines dev ops scenarios from multiple sources such as github, stackoverflow and emails.
 ![Image of YunnyAlfredBot](/ReadMeMaterials/YunnyAlfredBot_sample.PNG)
 
@@ -37,7 +37,6 @@ As there were many unknowns in the beginning, we decided to start small by creat
 3) Noisy notifications. 
 -> Same approach as the problem #2. YunnyAlfredBot saves the unique id of the issue and the activity id of its adaptive card in Azure Cosmos databse. Therefore, when the bot identifies that this is an exsiting issue, it finds the associated activity id and uses it to update the adaptive card. You can find more about the concept of Activity in Bot development in here: [Conversation Basic](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/conversations/conversation-basics?tabs=dotnet)
 
-3) 
 ## Takeaways:
 
 # Try YunnyAlfredBot Locally
