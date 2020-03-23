@@ -60,14 +60,14 @@ If you are curious about following questions, please check [AboutYunnyAlfredBot.
 * Install the bot in a channel that you would like to install. 
 * Once YunnyAlfreBot is installed, do '@YunnyAlfredBot connect'. 
   * This will return a url to the channel. Copy this value as we need it later. 
-  * ![YunnyAlfredBot connect](/ReadMeMaterials/connect.PNG)
+  ![YunnyAlfredBot connect](/ReadMeMaterials/connect.PNG)
 
 ## Get your Github Personal Access Token
 You will need a GitHub personal access token to get all data we need from github. 
 * Log in to your Github account.
 * Go to settings -> Developer Settings -> Personal Access Token.
 * Generate a new token. 
-![Github Access Token](/ReadMeMaterials/GithubAccessTokenPage.PNG)
+  ![Github Access Token](/ReadMeMaterials/GithubAccessTokenPage.PNG)
 * Save this new token as we need this value in the next section.
 
 ## Configure Micorsoft Power Automate
@@ -97,7 +97,8 @@ Repeat the above process for ["[YunnyAlfredBot]GitHub-CloseIssues flow"](/ReadMe
 
 ## Set up your Flows. 
 * Open 'YunnyAlfredBot GitHub-AssignToAUser From Template' flow.
-  * You will see something like this: ![Flow](/ReadMeMaterials/flow.PNG)
+  * You will see something like this: 
+  ![Flow](/ReadMeMaterials/flow.PNG)
 * Go to 'Secrets' box -> Click '...' -> Click 'Settings' -> Add your github personal access token as a value of 'githubAuth' -> Click Done.
 * Click 'Switch' -> Click 'Case' -> Click 'HTTP 2'.
 * In URI section, copy the url that you got by running '@YunnyAlfredBot connect' in Teams client. 
@@ -105,7 +106,7 @@ Repeat the above process for ["[YunnyAlfredBot]GitHub-CloseIssues flow"](/ReadMe
   * Note: Only people in the channel where YunnyAlfredBot is installed can be tagged. 
   * You can check a person's UPN by mentioning the personl in the channel. 
     * ex: dmxtst17@microsoft.com 
-    * ![get upn](/ReadMeMaterials/upn.PNG)
+    ![get upn](/ReadMeMaterials/upn.PNG)
   * The end result should look like this:
     ![end result](/ReadMeMaterials/endresult.PNG)
 
