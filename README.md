@@ -15,7 +15,40 @@ If you are curious about following questions, please check [AboutYunnyAlfredBot.
 # Try YunnyAlfredBot Locally
 ## Demo Video
 ## Set up the bot
+1. Reigster the bot with the Bot Framework via App Studio in Microsoft Teams.
+* Install App Studio app in Microsoft Teams. 
+* Click 'Create an app' and fill out App details first.  
+* Go to Bots under Capabilities. 
+  * Click 'Set up' and fill out the page. 
+  * Copy the Bot ID and a newly generated app passowrd. We need these values later. 
+  * For YunnyAlfredBot, you don't need to select anything under Messaging bot and Calling bot. The scope is only for Team. 
+  * More details about using App Studio are available [here](https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/get-started-dotnet-app-studio). 
+
+2. Set up an tunneling software.
+* You can use [ngork](https://ngrok.com/) or [TunnelRelay](https://github.com/OfficeDev/microsoft-teams-tunnelrelay). 
+  * If you have an azure account, I highly recommend using TunnelRelay to set up tunneling. 
+  * You can find how to use TunnelRelay in its github. 
+  * How to use ngork for Teams Bot Development: check [here](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/debug)
+* Copy the externally addressable URL from your tunneling app. We need it later. 
+
+3. Configure YunnyAlfredBot.sln
+* Open YunnyAlfredBot.sln file in Visual Studio.
+* Open appsettings.josn file and update it as follows:
+  * Replace `ADD_YOUR_BOT_APP_ID` with the Application ID you received while registering your bot.
+  * Replace `ADD_YOUR_BOT_APP_PASSWORD` with the App Password that you copied. 
+  * Replace `ADD_YOUR_BOT_HOSTING_URL` with the externally addressable URL that you copied from ngork or TunnelRelay. 
+
 ## Set up the Azure Cosmos DB
+* Go to [Azure Portal](https://portal.azure.com) and register a new Azure Cosmos DB database.
+* Choose "Core (SQL)" for API.
+* Create a database with name `YunnyAlfredBotConfig` (You can name the database whatever you want.)
+* Create the following containers:
+  * `ChannelConversationReference` with partition-key as channelId.
+  * `ExternalTicketMessageId` with partition-key as externalTicketId.
+* Copy the Cosmos DB endpoint URL and paste it into appsettings.json to replace `ADD_COSMOS_DB_ENDPOINT_URL_HERE`.
+* Copy the Cosmos DB primary key value and paste it into appsettings.json to replace `ADD_COSMOS_DB_PRIMARY_KEY_HERE`.
+* Copy the Cosmos DB database name and paste it into appsettings.json to replace `ADD_COSMOS_DB_DATABASE_NAME`.
+
 ## Get your Github Personal Access Token
 ## Configure Micorsoft Power Automate
 ## Deploy the bot to Azure
