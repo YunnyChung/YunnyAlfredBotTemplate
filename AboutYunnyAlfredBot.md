@@ -1,4 +1,4 @@
-##YunnyAlfredBot
+## YunnyAlfredBot
 YunnyAlfredBot is a prototype of a Microsoft Teams bot, Alfred, that streamlines dev ops scenarios from multiple sources such as github, stackoverflow and emails.
 ![Image of YunnyAlfredBot](/ReadMeMaterials/YunnyAlfredBot_sample.PNG)
 
