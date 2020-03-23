@@ -98,7 +98,7 @@ Repeat the above process for ["[YunnyAlfredBot]GitHub-CloseIssues flow"](/ReadMe
 ## Set up your Flows. 
 * Open 'YunnyAlfredBot GitHub-AssignToAUser From Template' flow.
   * You will see something like this: 
-  ![Flow](/ReadMeMaterials/flow.PNG)
+  * ![Flow](/ReadMeMaterials/flow.PNG)
 * Go to 'Secrets' box -> Click '...' -> Click 'Settings' -> Add your github personal access token as a value of 'githubAuth' -> Click Done.
 * Click 'Switch' -> Click 'Case' -> Click 'HTTP 2'.
 * In URI section, copy the url that you got by running '@YunnyAlfredBot connect' in Teams client. 
