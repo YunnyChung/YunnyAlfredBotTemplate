@@ -6,7 +6,6 @@ YunnyAlfredBot is a prototype of a Microsoft Teams bot, Alfred, that streamlines
 ![Mention YunnyAlfredBot](/ReadMeMaterials/YunnyAlfredBot_mention.PNG)
 
 # Try YunnyAlfredBot Locally
-## Demo Video
 ## Prerequsites
 * You need to have an Azure subscription to use Azure CosmosDB. 
 * You need to be on a plan that supports premium connectors in Microsoft Power Auotmate. If you have a work or school account, and your orgnaization supports Microsoft Power Automate, you will be able to preimum connectors, such as HTTP. 
