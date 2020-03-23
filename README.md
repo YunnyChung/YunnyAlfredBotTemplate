@@ -82,7 +82,7 @@ YunnyAlfredBot exposes an end point(`flow/messages/{encryptedChannelID}`). You n
 * Click 'import' on the top. 
 * Upload "[YunnyAlfredBot]Github-AssignToUser" zip file. 
   * After the zip file is uploaded, you will a page like this: 
-    * ![After uploaded](/ReadMeMaterials/AfterImported.png)
+    * ![After uploaded](/ReadMeMaterials/AfterImported.PNG)
 * Click a tool icon under 'ACTION' in the same row with 'YunnyAlfredBot GitHub-AssignToAUser Template'. 
   * Change 'Update' under 'Setup' to 'Create as new'. 
     * ![Create as new](/ReadMeMaterials/createasnew.png)
