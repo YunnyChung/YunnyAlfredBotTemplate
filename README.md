@@ -5,13 +5,6 @@ YunnyAlfredBot is a prototype of a Microsoft Teams bot, Alfred, that streamlines
 **Note:** You see 'BigYunsEchoBot' as a bot name in the screen shot as I registered the bot to MIcrosoft Teams by using this name. Initially, I simply named it this way as BigYuns is my nickname and I was suing the EchoBot template to create this bot. Unfortunately, I cannot change the bot name once I name it. Don't get confused the bot name with the Teams app name. The app name is 'YunnyAlfredBot', and this is the name you use to @ mention the bot. 
 ![Mention YunnyAlfredBot](/ReadMeMaterials/YunnyAlfredBot_mention.PNG)
 
-# More context about YunnyAlfredBot
-If you are curious about following questions, please check [AboutYunnyAlfredBot.md](AboutYunnyAlfredBot.md)
-- What does YunnyAlfredBot do? 
-- Why do we need YunnyAlfredBot?
-- How does YunnyAlfredBot address those three problems?
-- What did Yunny learn through this project? 
-
 # Try YunnyAlfredBot Locally
 ## Demo Video
 ## Prerequsites
